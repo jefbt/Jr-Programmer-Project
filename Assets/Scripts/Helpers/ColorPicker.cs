@@ -48,4 +48,16 @@ public class ColorPicker : MonoBehaviour
             }
         }
     }
+
+    public bool ContainsColor(Color color)
+    {
+        for (int i = 0; i < AvailableColors.Length; ++i)
+        {
+            if (AvailableColors[i] == color)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
